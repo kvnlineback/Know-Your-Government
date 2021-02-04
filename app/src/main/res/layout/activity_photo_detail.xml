@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/photoDetailLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoDetailActivity">
+
+
+    <TextView
+        android:id="@+id/photoAddress"
+        android:layout_width="256dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="address" />
+
+    <TextView
+        android:id="@+id/photoTitle"
+        android:layout_width="309dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="92dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoAddress"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/photoName"
+        android:layout_width="191dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="110dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoTitle"
+        tools:text="name" />
+
+    <ImageView
+        android:id="@+id/photoPhoto"
+        android:layout_width="383dp"
+        android:layout_height="566dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoName"
+        app:srcCompat="@drawable/missing" />
+
+    <ImageView
+        android:id="@+id/photoPartyLogo"
+        android:layout_width="98dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="35dp"
+        android:onClick="logoClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/photoPhoto"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/photoPhoto"
+        app:srcCompat="@drawable/dem_logo" />
+</androidx.constraintlayout.widget.ConstraintLayout>
